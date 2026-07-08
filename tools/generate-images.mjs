@@ -51,7 +51,10 @@ const IMAGES = [
     name: "about-fleet",
     size: "1536x1024",
     prompt:
-      "A lineup of heavy construction machinery parked on a gravel yard at dusk: excavator, bulldozer, dump truck and road roller, company fleet portrait. " + STYLE,
+      "Wide shot of FOUR SEPARATE heavy construction machines parked in a row on a gravel yard at golden hour sunset, " +
+      "with clear visible gaps between each vehicle. From left to right: a standalone hydraulic excavator on tracks, " +
+      "then a standalone bulldozer with front blade, then a standalone dump truck, then a standalone road roller compactor. " +
+      "Each machine is a complete distinct vehicle, NOT merged or fused together, NOT hybrid. " + STYLE,
   },
 ];
 
@@ -74,7 +77,7 @@ async function generate({ name, prompt, size }) {
       model: "gpt-image-1",
       prompt,
       size,
-      quality: "medium",
+      quality: "high",
       n: 1,
     }),
   });
