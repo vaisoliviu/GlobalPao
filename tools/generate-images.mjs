@@ -6,28 +6,36 @@ import path from "node:path";
 const OUT_DIR = path.resolve(import.meta.dirname, "..", "assets", "img");
 
 const STYLE =
-  "Professional photography style, golden hour warm light, slight haze and dust in the air, " +
-  "high detail, realistic, construction industry, no text, no watermark, no people looking at camera.";
+  "Ultra-photorealistic construction site photograph, shot on a professional DSLR camera, " +
+  "natural golden hour sunset lighting with warm orange glow and long shadows, dramatic sky " +
+  "with orange and blue gradient and scattered clouds, realistic dirt texture and dust in the air, " +
+  "sharp mechanical details on yellow heavy machinery, documentary industrial photography style, " +
+  "no text, no watermark, no people, no CGI look, no illustration style.";
 
 const IMAGES = [
   {
     name: "hero",
     size: "1536x1024",
     prompt:
-      "Wide cinematic shot of a large yellow hydraulic excavator working on an earthworks construction site at sunrise, " +
-      "piles of excavated soil, a dump truck in the background, dramatic sky. " + STYLE,
+      "Wide cinematic photograph of a large yellow hydraulic excavator actively digging on a mound of earth " +
+      "at a construction site during sunset. The excavator bucket is raised with soil, dramatic golden hour " +
+      "backlight, piles of excavated dirt, an articulated dump truck parked on the ground below. " + STYLE,
   },
   {
     name: "service-excavation",
     size: "1024x1024",
     prompt:
-      "A hydraulic excavator digging a deep foundation trench on a construction site, bucket full of earth mid-swing. " + STYLE,
+      "Photorealistic close-to-medium shot of a yellow hydraulic excavator digging a deep trench in brown earth " +
+      "at sunset. The bucket is inside the trench mid-dig, hydraulic arm extended, dramatic colorful sky with " +
+      "orange clouds and blue tones, construction site with soil piles. " + STYLE,
   },
   {
     name: "service-earthmoving",
     size: "1024x1024",
     prompt:
-      "A large articulated dump truck being loaded with soil by an excavator, earthmoving operation on a big site. " + STYLE,
+      "Photorealistic photograph of a yellow excavator beside a large yellow articulated dump truck at golden hour sunset, " +
+      "carefully loading soil directly INTO the open rear dump bed. The bucket is above the truck bed, NOT on the hood or cab. " +
+      "Correct earthmoving operation, side angle view, dust in warm light, dramatic sunset sky. " + STYLE,
   },
   {
     name: "service-demolition",
