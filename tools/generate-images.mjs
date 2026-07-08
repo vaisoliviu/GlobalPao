@@ -59,10 +59,11 @@ const IMAGES = [
     name: "about-fleet",
     size: "1536x1024",
     prompt:
-      "Wide shot of FOUR SEPARATE heavy construction machines parked in a row on a gravel yard at golden hour sunset, " +
-      "with clear visible gaps between each vehicle. From left to right: a standalone hydraulic excavator on tracks, " +
-      "then a standalone bulldozer with front blade, then a standalone dump truck, then a standalone road roller compactor. " +
-      "Each machine is a complete distinct vehicle, NOT merged or fused together, NOT hybrid. " + STYLE,
+      "Ultra-photorealistic wide photograph of FOUR SEPARATE heavy construction machines parked in a row on a dusty " +
+      "gravel equipment yard at golden hour sunset. From left to right with clear gaps between each: a yellow hydraulic " +
+      "excavator on tracks, a yellow bulldozer with front blade, a yellow articulated dump truck, and a yellow road roller. " +
+      "Each machine is distinct, slightly dirty with real-world wear, dust and mud on tracks and tires, NOT merged. " +
+      "Natural documentary industrial photography, DSLR, warm sunset backlight, atmospheric dust, uneven gravel ground. " + STYLE,
   },
 ];
 
