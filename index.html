@@ -255,7 +255,8 @@
           <li class="reveal"><span>🏢</span><span data-i18n="contact.reg">Nr. înreg. RO26652709</span></li>
         </ul>
       </div>
-      <form class="contact__form reveal" id="contactForm" action="mailto:globalpaog@gmail.com" method="post" enctype="text/plain">
+      <form class="contact__form reveal" id="contactForm" action="https://formspree.io/f/xwvddkpj" method="POST">
+        <input type="hidden" name="_subject" value="Cerere ofertă — Global Pao" />
         <div class="field">
           <label for="fName" data-i18n="contact.name">Nume</label>
           <input id="fName" name="name" type="text" required placeholder="Numele tău" data-i18n-placeholder="contact.name.ph" />
@@ -269,6 +270,7 @@
           <textarea id="fMsg" name="message" rows="5" required placeholder="ex. Săpătură de fundație pentru o casă, aprox. 200 m², în ..." data-i18n-placeholder="contact.msg.ph"></textarea>
         </div>
         <button type="submit" class="btn btn--full" data-i18n="contact.send">Trimite cererea</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
     </div>
   </section>

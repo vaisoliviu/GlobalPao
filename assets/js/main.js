@@ -54,3 +54,40 @@ document.querySelectorAll(".stat__num").forEach((el) => countObserver.observe(el
 
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Contact form → Formspree
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+let formStatusKey = null;
+
+function setFormStatus(key, type) {
+  formStatusKey = key;
+  formStatus.textContent = key ? window.GP_I18N.t(key) : "";
+  formStatus.className = key ? `form-status form-status--${type}` : "form-status";
+}
+
+contactForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const btn = contactForm.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  setFormStatus("contact.sending", "sending");
+
+  try {
+    const res = await fetch(contactForm.action, {
+      method: "POST",
+      body: new FormData(contactForm),
+      headers: { Accept: "application/json" },
+    });
+    if (!res.ok) throw new Error("formspree error");
+    setFormStatus("contact.success", "ok");
+    contactForm.reset();
+  } catch {
+    setFormStatus("contact.error", "err");
+  } finally {
+    btn.disabled = false;
+  }
+});
+
+window.GP_I18N.onChange(() => {
+  if (formStatusKey) formStatus.textContent = window.GP_I18N.t(formStatusKey);
+});

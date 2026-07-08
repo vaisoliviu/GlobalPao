@@ -96,6 +96,9 @@
       "contact.msg": "De ce ai nevoie?",
       "contact.msg.ph": "ex. Săpătură de fundație pentru o casă, aprox. 200 m², în ...",
       "contact.send": "Trimite cererea",
+      "contact.sending": "Se trimite…",
+      "contact.success": "Mulțumim! Cererea ta a fost trimisă. Revenim în curând.",
+      "contact.error": "Ceva nu a mers bine. Încearcă din nou sau sună-ne direct.",
 
       "footer.rights": "Nr. înreg. RO26652709 · Toate drepturile rezervate.",
       "footer.up": "Înapoi sus ↑",
@@ -192,6 +195,9 @@
       "contact.msg": "What do you need?",
       "contact.msg.ph": "e.g. Foundation excavation for a house, approx. 200 m², in ...",
       "contact.send": "Send request",
+      "contact.sending": "Sending…",
+      "contact.success": "Thank you! Your request was sent. We'll get back to you soon.",
+      "contact.error": "Something went wrong. Please try again or call us directly.",
 
       "footer.rights": "Reg. no. RO26652709 · All rights reserved.",
       "footer.up": "Back to top ↑",
